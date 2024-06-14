@@ -1,0 +1,1 @@
+print("You are a senior citizen" if int(input("Age : "))>60 else "You are not a senior citizen")
