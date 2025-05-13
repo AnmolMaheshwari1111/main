@@ -1,0 +1,1 @@
+print("The number is divisible by 2 and 3 both" if int(input("Number : "))%6 == 0 else "The number is not divisible by 2 and 3 both")
