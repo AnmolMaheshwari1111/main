@@ -1,1 +1,0 @@
-print((int(input("1st Subject:",))+int(input("2nd Subject:",))+int(input("3rd Subject:",))+int(input("4th Subject:",))+int(input("5th Subject:",)))/5)

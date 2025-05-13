@@ -1,1 +1,0 @@
-print(max(int(input("1st Number:")),int(input("2nd Number:")),int(input("3rd Number:"))))

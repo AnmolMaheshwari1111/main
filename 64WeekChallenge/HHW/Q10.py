@@ -1,1 +1,0 @@
-for i in range(int(input("From Number :: ")),int(input("To Number :: "))+1,1): print(i)
