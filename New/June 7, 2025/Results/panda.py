@@ -23,13 +23,14 @@ multiline_str = """
 
 n = 13
 result = parse_mixed_lines(multiline_str, n)
-
+for chunk in result:
+    print(chunk)
 import pandas as pd
-df = pd.DataFrame(result, columns=['Sr No.','Form No.','Student Name','Batch','Campus','Test Rank','CAMPUS RANK','BATCH RANK','300','%','Phy','Math','Chem'])
-modi_df=df[df['Batch']=='P4TE_1A_AA0'][['Student Name','300']].sort_values(by='Student Name')
+df = pd.DataFrame(result, columns=['Sr No.','Form No.','Student Name','Batch','Campus','Test Rank','CAMPUS RANK','BATCH RANK','300','%','Phy','Chem','Math'])
+modi_df=df[df['Batch']=='P4TE_1A_AA0'][['Student Name','300','Phy','Chem','Math']].sort_values(by='Student Name')
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 print(modi_df)
-modi_df.to_excel("2.xlsx",index=False)
+modi_df.to_excel("1.xlsx",index=False)
