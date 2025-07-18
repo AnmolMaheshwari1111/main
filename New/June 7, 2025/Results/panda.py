@@ -19,6 +19,7 @@ def parse_mixed_lines(multiline_string, n):
     return chunks
 
 multiline_str = """
+
 """
 
 n = 13
